@@ -20,7 +20,7 @@ public class ArbolController {
 
     @GetMapping("/listado")
     public String inicio(Model model) {
-        var arboles = arbolService.getArboles(false);
+        var arboles = arbolService.getArboles();
         model.addAttribute("arboles", arboles);
         model.addAttribute("totalArboles", arboles.size());
         return "/arbol/listado";

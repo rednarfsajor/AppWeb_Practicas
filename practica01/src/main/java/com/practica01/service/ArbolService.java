@@ -7,6 +7,6 @@ package com.practica01.service;
 import com.practica01.domain.Arbol;
 import java.util.List;
 public interface ArbolService {
-    public List<Arbol> getArboles(boolean activos);
+    public List<Arbol> getArboles();
  
 }
